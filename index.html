@@ -1,0 +1,1483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+        integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+</head>
+
+<body>
+    <!-- Back to top button -->
+    <!-- <div class="go-to-top">
+        <button class="btn gotop"><i class="fa-solid fa-hand-point-up"></i></button>
+    </div> -->
+
+    <div class="header">
+        <div class="container">
+            <div class="heroback">
+                <img src="assets/img/background.jpg">
+            </div>
+            <div class="profilecont">
+                <div class="profileimg">
+                    <img src="assets/img/profile.jpg" alt="">
+                </div>
+                <div class="aboutprofile">
+                    <h2>Brijesh Yadav <span>(Web Developer)</span></h2>
+                    <span class="itailic">It is a long established fact that a reader will be distracted by <br> the
+                        readable content of a page when looking at its
+                        layout.</span>
+                    <div class="linkbar">
+                        <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube-square"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="socillink">
+                    <div class="herologo">
+                        <img src="assets/img/liclogo.png" alt="" srcset="">
+                        <img data-bs-toggle="modal" href="#exampleModalToggle" role="button" src="assets/img/qr.png"
+                            alt="" srcset="" style="width:42px;">
+                    </div>
+                    <div class="herologo">
+                        <h6 cplass>Life Insurance Corporation of India</h6>
+                    </div>
+                    <div class="linkbutton">
+                        <a data-bs-toggle="modal" data-bs-target="#refer-business" name="" id="" class="btn First-act"
+                            href="#" role="button"><i class="fa-solid fa-briefcase"></i> Refer
+                            Business</a>
+                        <a name="" id="" class="btn" href="#" role="button"><i class="fa-solid fa-circle-question"></i>
+                            Enquiry</a>
+                        <a name="" id="" class="btn" href="#" role="button"><i class="fa-solid fa-floppy-disk"></i> Save
+                            My Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 0px 9.4rem;">
+            <nav class="navbar navbar-expand-lg navbar-light main-navbar" id="navbar_top">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="#prolink" class="active">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#servlink">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#prodlink">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)">Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#imglink">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#testilink">Testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#paylink">Payment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="topend"></div>
+    </div>
+
+    <div class="mainbody">
+        <div id="prolink"></div>
+        <div class="container p-4 pt-5">
+            <div class="container">
+                <div id="AboutSec">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="header-section">
+                                <h2 class="title">user <span>Intro</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadowBox">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="userthum">
+                                    <!-- <div class="thum">
+                                    <img src="assets/img/profile.jpg" alt="">
+                                </div> -->
+                                    <div class="abouttext">
+                                        <h5>About Me</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas
+                                            repudiandae
+                                            fuga similique, aut, soluta veniam earum inventore nemo esse sunt cumque
+                                            excepturi
+                                            saepe impedit at. Aut ipsam consectetur vitae quidem. Rem neque, maxime
+                                            recusandae <span id="dots">...</span><span id="more">
+                                                totam et sit cupiditate! Dolor distinctio ipsum eveniet voluptate nobis
+                                                ut
+                                                quaerat
+                                                fuga earum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit. Exercitationem, corrupti sed delectus consectetur vel quis
+                                                asperiores,
+                                                omnis neque excepturi blanditiis accusantium. Earum impedit qui culpa
+                                                voluptate quam similique quos reiciendis voluptates, consectetur non
+                                                neque
+                                                aut fuga, quod sit tempora, velit molestias modi quasi perspiciatis
+                                                voluptatem. Ipsa blanditiis modi eos expedita.</span></p>
+                                        <a type="button" onclick="myFunction()" id="myBtn">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="userabout">
+                                    <div class="contactBTN">
+                                        <div class="cont">
+                                            <p>Mobile Number </p>
+                                            <h6>(+91) 8126 139 074</h6>
+                                        </div>
+                                        <div class="cont">
+                                            <p>WhatsApp Number</p>
+                                            <h6>(+91) 8126 139 074</h6>
+                                        </div>
+                                        <div class="cont">
+                                            <p>Website</p>
+                                            <h6>www.magnet.cards</h6>
+                                        </div>
+                                        <div class="cont">
+                                            <p>Telegram</p>
+                                            <h6>@gyangps</h6>
+                                        </div>
+                                        <div class="cont">
+                                            <p>Email address</p>
+                                            <h6>gyanedra.s@troology.com</h6>
+                                        </div>
+                                        <div class="cont">
+                                            <p>Address</p>
+                                            <h6 class="m-0">Hazratganj, Lucknow, Uttar Pradesh 226001</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="servlink" class=""></div>
+                <section class="section-services" id="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="header-section">
+                                    <h2 class="title">WHAT WE <span>Service</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper test">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="service-box">
+                                        <div class="element">
+                                            <div data-bs-toggle="modal" data-bs-target="#myModal" class="shape"></div>
+                                        </div>
+                                        <div class="service-containet">
+                                            <h3 class="title">LIFE INSURANCE</h3>
+                                            <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                                facilisis</p>
+                                            <a data-bs-toggle="modal" data-bs-target="#myModal" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#myModal" href="#">Enquiry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="service-box">
+                                        <div class="element">
+                                            <div data-bs-toggle="modal" data-bs-target="#myModal" class="shape"></div>
+                                        </div>
+                                        <div class="service-containet">
+                                            <h3 class="title">MUTUAL FUNDS</h3>
+                                            <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                                facilisis</p>
+                                            <a data-bs-toggle="modal" data-bs-target="#myModal" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#myModal" href="#">Enquiry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="service-box">
+                                        <div class="element">
+                                            <div data-bs-toggle="modal" data-bs-target="#myModal" class="shape"></div>
+                                        </div>
+                                        <div class="service-containet">
+                                            <h3 class="title">HEALTH INSURANCE</h3>
+                                            <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                                facilisis</p>
+                                            <a data-bs-toggle="modal" data-bs-target="#myModal" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#myModal" href="#">Enquiry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="assets/img/1.png" alt="">
+                                    </span>
+                                    <h3 class="title">LIFE INSURANCE</h3>
+                                    <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                        facilisis, justo eu
+                                        vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel
+                                        velit.</p>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Enquiry</a>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="assets/img/2.jpg" alt="">
+                                    </span>
+                                    <h3 class="title">HEALTH INSURANCE</h3>
+                                    <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                        facilisis, justo eu
+                                        vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel
+                                        velit.</p>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Enquiry</a>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="assets/img/3.jpg" alt="">
+                                    </span>
+                                    <h3 class="title">MUTUAL FUNDS</h3>
+                                    <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                        facilisis, justo eu
+                                        vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel
+                                        velit.</p>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Enquiry</a>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="assets/img/4.png" alt="">
+                                    </span>
+                                    <h3 class="title">GAME DEVELOPMENT</h3>
+                                    <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                        facilisis, justo eu
+                                        vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel
+                                        velit.</p>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Enquiry</a>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="assets/img/1.png" alt="">
+                                    </span>
+                                    <h3 class="title">LIFE INSURANCE</h3>
+                                    <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                        facilisis, justo eu
+                                        vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel
+                                        velit.</p>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Enquiry</a>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="assets/img/3.jpg" alt="">
+                                    </span>
+                                    <h3 class="title">HEALTH INSURANCE</h3>
+                                    <p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi
+                                        facilisis, justo eu
+                                        vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel
+                                        velit.</p>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Enquiry</a>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+                    </div> -->
+                    </div>
+                </section>
+                <div id="prodlink"></div>
+                <section class="section-services" id="products">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-lg-8">
+                                <div class="header-section">
+                                    <h2 class="title">our <span>products</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper product-br meSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail </a>
+                                            <a href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail</a>
+                                            <a href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail </a>
+                                            <a href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product">
+                                        <div class="product-item">
+                                            <h5>NIKE</h5>
+                                            <p class="description">Express delivery inno service effective logistics
+                                                solution
+                                                for delivery
+                                                of small cargo delivery service.</p>
+                                            <h6>$ 300 <span>$ 400</span></h6>
+                                            <a data-bs-toggle="modal" data-bs-target="#pro-pop" href="#">View detail</a>
+                                            <a href="#">Enquiry</a>
+                                        </div>
+                                        <div class="card product-thum">
+                                            <img src="assets/img/products.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-product">
+                                <div class="product-item">
+                                    <h5>NIKE</h5>
+                                    <p class="description">Express delivery inno service effective logistics solution
+                                        for delivery
+                                        of small cargo delivery service.</p>
+                                    <h6>$ 300 <span>$ 400</span></h6>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Add to Cart <i class="fa-solid fa-cart-plus"></i></a>
+                                </div>
+                                <div class="card product-thum">
+                                    <img src="assets/img/products.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-product">
+                                <div class="product-item">
+                                    <h5>NIKE</h5>
+                                    <p class="description">Express delivery inno service effective logistics solution
+                                        for delivery
+                                        of small cargo delivery service.</p>
+                                    <h6>$ 300 <span>$ 400</span></h6>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Add to Cart <i class="fa-solid fa-cart-plus"></i></a>
+                                </div>
+                                <div class="card product-thum">
+                                    <img src="assets/img/products.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-product">
+                                <div class="product-item">
+                                    <h5>NIKE</h5>
+                                    <p class="description">Express delivery inno service effective logistics solution
+                                        for delivery
+                                        of small cargo delivery service.</p>
+                                    <h6>$ 300 <span>$ 400</span></h6>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Add to Cart <i class="fa-solid fa-cart-plus"></i></a>
+                                </div>
+                                <div class="card product-thum">
+                                    <img src="assets/img/products.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-product">
+                                <div class="product-item">
+                                    <h5>NIKE</h5>
+                                    <p class="description">Express delivery inno service effective logistics solution
+                                        for delivery
+                                        of small cargo delivery service.</p>
+                                    <h6>$ 300 <span>$ 400</span></h6>
+                                    <a href="#">View detail</a>
+                                    <a href="#">Add to Cart <i class="fa-solid fa-cart-plus"></i></a>
+                                </div>
+                                <div class="card product-thum">
+                                    <img src="assets/img/products.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    </div>
+                </section>
+                <div id="imglink"></div>
+                <section class="section-services" id="gallery">
+                    <div class="container">
+                        <div class="row">
+                            <!-- justify-content-center text-center -->
+                            <div class="col-md-10 col-lg-8">
+                                <div class="header-section">
+                                    <h2 class="title"><span>gallery</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-gallery">
+                            <h2 class="title" style="color:#1b74e4"><span>Image</span></h2>
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper  mt-4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div data-bs-toggle="modal" data-bs-target="#myimg" class="img-box">
+                                            <img src="assets/img/gallery.jpg" alt="" />
+                                            <div class="transparent-box">
+                                                <div class="caption">
+                                                    <p>Magnet</p>
+                                                    <!-- <p class="opacity-low">Composite</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <h2 class="title" style="color:#1b74e4"><span>Videos</span></h2>
+
+
+
+                            <div class="swiper mySwiper  mt-4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myvid"
+                                            href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myvid"
+                                            href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myvid"
+                                            href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myvid"
+                                            href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myvid"
+                                            href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myvid"
+                                            href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myvid"
+                                            href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div data-bs-toggle="modal" data-bs-target="#myvid" href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <iframe src="https://www.youtube.com/embed/Zhawgd0REhA" frameborder="0"
+                                                webkitallowfullscreen="" mozallowfullscreen=""
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div data-bs-toggle="modal" data-bs-target="#myvid" href="#myvid" class="">
+                                            <p>Magnet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+
+            <section>
+                <div class="imp_links">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="link1">
+                                <div>
+                                    <img src="assets/img/word.png" alt="">
+                                    <a href="">Link Name 1</a>
+                                </div>
+                                <div>
+                                    <img src="assets/img/excel.png" alt="">
+                                    <a href="">Link Name 2</a>
+                                </div>
+                                <div>
+                                    <img src="assets/img/csv.png" alt="">
+                                    <a href="">Link Name 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="link1 mt-5">
+                                <div>
+                                    <img src="assets/img/powerpoint.png" alt="">
+                                    <a href="">Link Name 1</a>
+                                </div>
+                                <div>
+                                    <img src="assets/img/link_ico.png" alt="">
+                                    <a href="">Link Name 2</a>
+                                </div>
+                                <div>
+                                    <img src="assets/img/pdf.png" alt="">
+                                    <a href="">Link Name 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="testilink"></div>
+        <section class="section" id="TESTIMONIALS">
+            <div class="slider card swiper testiSwiper">
+                <div class="swiper-wrapper">
+                    <div class="slide slide--1 swiper-slide">
+                        <div class="testimonial">
+                            <address class="testimonial__author">
+                                <img src="assets/img/profile.jpg" alt="" class="testimonial__photo" />
+                                <h6 class="testimonial__name">Brijesh</h6>
+                                <p class="testimonial__location">Troology</p>
+                            </address>
+                            <!-- <h5 class="testimonial__header">Best financial decision ever!</h5> -->
+                            <blockquote class="testimonial__text">
+                                Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                                ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                                laborum. Incidunt numquam perferendis veritatis neque repellendus.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                deserunt exercitationem deleniti.
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="slide slide--2 swiper-slide">
+                        <div class="testimonial">
+                             <address class="testimonial__author">
+                                <img src="assets/img/profile.jpg" alt="" class="testimonial__photo" />
+                                <h6 class="testimonial__name">Brijesh</h6>
+                                <p class="testimonial__location">Troology</p>
+                            </address>
+                            <!-- <h5 class="testimonial__header">
+                                The last step to becoming a complete minimalist
+                            </h5> -->
+                            <blockquote class="testimonial__text">
+                                Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                                ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                                laborum. Incidunt numquam perferendis veritatis neque repellendus.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                deserunt exercitationem deleniti.
+                            </blockquote>
+                          
+                        </div>
+                    </div>
+
+                    <div class="slide slide--3 swiper-slide">
+                        <div class="testimonial">
+                             <address class="testimonial__author">
+                                <img src="assets/img/profile.jpg" alt="" class="testimonial__photo" />
+                                <h6 class="testimonial__name">Brijesh</h6>
+                                <p class="testimonial__location">Troology</p>
+                            </address>
+                            <!-- <h5 class="testimonial__header">
+                                Finally free from old-school banks
+                            </h5> -->
+                            <blockquote class="testimonial__text">
+                            Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                            ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                            laborum. Incidunt numquam perferendis veritatis neque repellendus.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            deserunt exercitationem deleniti.
+                            </blockquote>
+                          
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+                                            <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+                                            <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+                                            <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
+                <!-- <button class="slider__btn slider__btn--left">&larr;</button>
+                <button class="slider__btn slider__btn--right">&rarr;</button> -->
+                <div class="dots"></div>
+            </div>
+        </section>
+        <div id="paylink"></div>
+        <div class="container p-4">
+            <div class="container">
+                <section class="section-services" id="PAYMENT">
+                    <div class="container">
+                        <div class="paymentcard">
+                            <label for="exampleInputEmail1" class="form-label m-0">UPI Image</label>
+                            <div class="cardQR">
+                                <img src="assets/img/qr2.png" alt="">
+                            </div>
+                            <div class="accountNum">
+                                <p>1234 1234 1234 1234</p>
+                            </div>
+                            <div class="cardholder">
+                                <label for="exampleInputEmail1" class="form-label m-0">ACCOUNT NAME</label>
+                                <P>BRIJESH YADAV</P>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- justify-content-center text-center -->
+                            <div class="col-md-10 col-lg-8">
+                                <div class="header-section">
+                                    <h2 class="title"><span>PAYMENT</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paymentSec card">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="accountdetails">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Bank Name:</label>
+                                            <div id="emailHelp" class="account-text">Bank of Maharashtra
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Account Number:</label>
+                                            <div id="emailHelp" class="account-text">1234 1234 1234 1234
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">PAN Card Number:</label>
+                                            <div id="emailHelp" class="account-text">AAAAA7777A
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">GST No.:</label>
+                                            <div id="emailHelp" class="account-text">07AAACP0165G2ZQ
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="accountdetails">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Account Type:</label>
+                                            <div id="emailHelp" class="account-text">Savings account
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Account Holder
+                                                Name:</label>
+                                            <div id="emailHelp" class="account-text">Brijesh Yadav
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">IFSC Code:</label>
+                                            <div id="emailHelp" class="account-text">PUNB0733600
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Remark:</label>
+                                            <div id="emailHelp" class="account-text">Is it possible to reverse funds
+                                                transferred to the wrong account..
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="footer-stip">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-cont">
+                                <a data-bs-toggle="modal" data-bs-target="#refer-business" name="" id="" class="btn"
+                                    href="#" role="button"><i class="fa-solid fa-briefcase"></i> Refer
+                                    Business</a>
+                                <a name="" id="" class="btn" href="#" role="button"><i
+                                        class="fa-solid fa-circle-question"></i>
+                                    Enquiry</a>
+                                <a name="" id="" class="btn" href="#" role="button"><i
+                                        class="fa-solid fa-floppy-disk"></i> Save
+                                    My Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".meSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            freeMode: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".testiSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    </script>
+    <!-- <script>const button = document.querySelector('.btn');
+
+        const displayButton = () => {
+            window.addEventListener('scroll', () => {
+                console.log(window.scrollY);
+
+                if (window.scrollY > 100) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            });
+        };
+
+        const scrollToTop = () => {
+            button.addEventListener("click", () => {
+                window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+                console.log(event);
+            });
+        };
+
+        displayButton();
+        scrollToTop();
+
+    </script> -->
+    <script>
+        var swiper = new Swiper(".test", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 540) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        }); 
+    </script>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- ***********QRMODEL********** -->
+<div class="modal fade profile-shr" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="profile-shr">
+            <div class="modal-header p-2">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Profile Share</h5>
+                <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="share-dil">
+                <div class="dit">
+                    <h5 class="m-0">Brijesh Yadav</h5>
+                    <p class="m-0 mb-4">Web Developer</p>
+                    <div class="link-button">
+                        <a href="">Share my code</a>
+                        <a href="">Save to photos</a>
+                    </div>
+                </div>
+                <div class="share-dil-img">
+                    <img src="assets/img/qr.png" alt="">
+                </div>
+
+            </div>
+            <div class="shrthum">
+                <img src="assets/img/profile.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- The Modal for service-->
+<div class="modal fade detail" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Service</h4>
+                <button type="button" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div id="homepage-slider" class="st-slider">
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide2" />
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide3" />
+                    <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="" />
+                    <div class="images">
+                        <div class="images-inner">
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <img src="assets/img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <img src="assets/img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <img src="assets/img/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-prod">
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sit nihil excepturi neque
+                        voluptatum accusantium distinctio tempora ipsam officiis architecto? Soluta quam vitae facere
+                        sapiente dignissimos hic pariatur deserunt odit sed, aut ratione ut, officia maxime eum ab quas
+                        totam ipsam rem necessitatibus quisquam voluptatum nisi. Commodi ducimus recusandae at impedit
+                        culpa dolorum, delectus perferendis. Earum numquam assumenda eum aliquam quidem laborum harum
+                        rerum corrupti fugiat. Voluptate sint eligendi dolores omnis asperiores sed necessitatibus iste
+                        quis illo optio impedit vel, nam itaque ipsam qui voluptatum, error nostrum excepturi,
+                        consequuntur consequatur ratione! Qui, nostrum. Animi deleniti laudantium officia, enim ea
+                        dolore.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal for product-->
+<div class="modal fade detail" id="pro-pop">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Product</h4>
+                <button type="button" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div id="homepage-slider" class="st-slider">
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide2" />
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide3" />
+                    <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="" />
+                    <div class="images">
+                        <div class="images-inner">
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <img src="assets/img/products.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <img src="assets/img/products.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <img src="assets/img/products.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-prod">
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sit nihil excepturi neque
+                        voluptatum accusantium distinctio tempora ipsam officiis architecto? Soluta quam vitae facere
+                        sapiente dignissimos hic pariatur deserunt odit sed, aut ratione ut, officia maxime eum ab quas
+                        totam ipsam rem necessitatibus quisquam voluptatum nisi. Commodi ducimus recusandae at impedit
+                        culpa dolorum, delectus perferendis. </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ***************gallary************************* -->
+<div class="modal fade detail" id="myimg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Image</h4>
+                <button type="button" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div id="homepage-slider" class="st-slider">
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+                    <div class="images">
+                        <div class="images-inner">
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <img src="assets/img/products.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-prod">
+                    <h5>Magnet</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- **********************************Video**************************** -->
+<div class="modal fade detail" id="myvid">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Video</h4>
+                <button type="button" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div id="homepage-slider" class="st-slider">
+                    <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+                    <div class="images">
+                        <div class="images-inner">
+                            <div class="image-slide">
+                                <div class="product-img">
+                                    <iframe style="width:100%;" src="https://www.youtube.com/embed/Zhawgd0REhA"
+                                        frameborder="0" webkitallowfullscreen="" mozallowfullscreen=""
+                                        allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-prod">
+                    <h5>Magnet</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ***************************************refer business********************************* -->
+<div class="modal fade detail" id="refer-business">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title fs-4">Connect With Brijesh</h4>
+                <button type="button" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="about-prod">
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sit nihil excepturi neque
+                        voluptatum accusantium distinctio tempora ipsam officiis architecto? Soluta quam vitae facere
+                        sapiente dignissimos hic pariatur deserunt odit sed, aut ratione ut, officia maxime eum ab quas
+                        totam ipsam rem necessitatibus quisquam voluptatum nisi. Commodi ducimus recusandae at impedit
+                        culpa dolorum, delectus perferendis. </h5>
+                </div>
+                <div class="modal-header">
+                    <h4 class=" fs-5 modal-title">Date: 06/27/2022</h4>
+                </div>
+                <div class="about-prod">
+                    <h5>Connection type:</h5>
+                    <h5>Request Connection Reffer to Friend</h5>
+                    <div class="form-data">
+                        <div class="form">
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Your Name"
+                                    aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Your Email"
+                                    aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Your Address"
+                                    aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Your Industry"
+                                    aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Comments"
+                                    aria-describedby="helpId">
+                            </div>
+                            <div class="ratting">
+                                <h5 class="mt-4 mb-2">How hot is referral?</h5>
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class="full"
+                                        for="star5" title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label
+                                        class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class="full"
+                                        for="star4" title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label
+                                        class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class="full"
+                                        for="star3" title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label
+                                        class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class="full"
+                                        for="star2" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label
+                                        class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class="full"
+                                        for="star1" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                                        for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                            <div class="form-btn" style="text-align:right;">
+                                <button type="submit" class="btn btn-primary">Submit And New</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
