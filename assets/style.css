@@ -141,7 +141,7 @@ li {
 }
 
 .main-navbar a {
-    padding: 17px;
+    padding: 18px;
     text-decoration: none;
     color: #65676b;
     font-size: 16px;
@@ -212,7 +212,7 @@ li {
 }
 
 .abouttext p {
-    font-weight: 500;
+    font-weight: 20px;
     color: rgb(111, 103, 107);
 }
 
@@ -220,6 +220,7 @@ li {
     font-weight: 700;
     width: fit-content;
     text-transform: uppercase;
+    color: #65676b;
 
 }
 
@@ -261,8 +262,9 @@ li {
     color: #1b74e4;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    /* border: 1px solid #ced4da; */
     -webkit-appearance: none;
+    justify-content: space-evenly;
     -moz-appearance: none;
     appearance: none;
     border-radius: 0.25rem;
@@ -271,14 +273,17 @@ li {
 
 .cont h6 {
     width: 50%;
+    color: #3e3e3e;
+}
+.cont h6:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .cont p {
-    width: 50%;
+   font-size: 21px;
     margin: 0%;
-    width: 50%;
-    margin: 0%;
-    color: #6f676b;
+    color: #8c939d;
     font-weight: 400;
 }
 
@@ -296,7 +301,7 @@ li {
     font-size: 27px;
 }
 
-#AboutSec .header-section .title:before {
+/* #AboutSec .header-section .title:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -316,14 +321,14 @@ li {
     width: 45px;
     height: 3px;
     background-color: #1b74e4;
-}
+} */
 
 #AboutSec .header-section h2 {
-    color: #1b74e4;
+    color: #050505;
 }
 
 #AboutSec .header-section span {
-    color: #1b74e4;
+    color: #050505;
 }
 
 /* ****************************************services************************************** */
@@ -352,10 +357,10 @@ li {
     padding-bottom: 25px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #1b74e4;
+    color: #050505;
 }
 
-.section-services .header-section .title:before {
+/* .section-services .header-section .title:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -375,7 +380,7 @@ li {
     width: 45px;
     height: 3px;
     background-color: #1b74e4;
-}
+} */
 
 
 .section-services {
@@ -609,7 +614,7 @@ li {
     transition-duration: 0.4s;
     outline: none;
 }
-
+/* 
 #products .header-section .title:before {
     content: "";
     position: absolute;
@@ -630,7 +635,7 @@ li {
     width: 45px;
     height: 3px;
     background-color: #1b74e4;
-}
+} */
 
 .product-item a:hover {
     color: #ffffff;
@@ -645,7 +650,7 @@ li {
     border-radius: 10px;
 }
 
-#gallery .header-section .title:before {
+/* #gallery .header-section .title:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -665,7 +670,7 @@ li {
     width: 45px;
     height: 3px;
     background-color: #1b74e4;
-}
+} */
 
 .img-box {
     box-sizing: content-box;
@@ -1014,7 +1019,7 @@ margin-top: 1rem;
     color: #1b74e4;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    /* border: 1px solid #ced4da; */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -1121,10 +1126,10 @@ margin-top: 1rem;
     position: relative;
     border: 1px solid #ddd;
     padding: 6px 9px;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
-    color: #fff;
-    background-color: #1b74e4;
+    color: #3e3e3e;
+    background-color: #e4e6eb;
     font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -1193,6 +1198,7 @@ margin-top: 1rem;
 .border-gallery span {
     font-size: 20px;
     text-decoration: underline;
+    color: #65676b;
 
 }
 
@@ -1640,4 +1646,7 @@ blockquote:after {
 }
 #paylink{
     padding: 2rem;
+}
+.accountdetails label{
+    width: 100%;
 }
