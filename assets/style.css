@@ -78,10 +78,6 @@ li {
     align-items: center;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    margin: 0 18px 0 0;
-}
-
 .heroback img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,7 +92,7 @@ li {
 
 .profilecont {
     position: relative;
-    padding: 0 35px;
+    padding: 0 33px;
     justify-content: space-between;
     align-items: baseline;
     display: flex;
@@ -135,46 +131,10 @@ li {
 
 .topend {
     border: 1px solid #ddd;
+    width: 77.9%;
+    margin: auto;
 }
 
-
-.main-navbar {
-    /* margin: 0px 35px; */
-    padding: 1rem 0px !important;
-    border-top: 1px solid #ddd;
-}
-
-.main-navbar a {
-    padding: 18px;
-    text-decoration: none;
-    color: #65676b;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.main-navbar .active {
-    border-bottom: 3px solid;
-    color: #1b74e4;
-}
-
-.main-navbar a:hover {
-    background-color: #f5f3f3;
-    border-radius: 5px;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky+.content {
-    padding-top: 60px;
-}
 
 .mainbody {
     background: #f0f2f5;
@@ -583,7 +543,7 @@ li {
     position: relative;
     background: rgb(255, 255, 255);
     /* top: 0rem; */
-    padding: 12rem 1rem 2rem;
+    padding: 9rem 1rem 2rem;
     border-radius: 17px 0px;
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
 }
@@ -596,7 +556,7 @@ li {
 
 .product-thum {
     position: relative;
-    top: -26rem;
+    top: -24.9rem;
     margin: auto;
     width: 86%;
     border-radius: 12px !important;
@@ -625,7 +585,7 @@ li {
 
 .single-product {
     margin-top: 40px;
-    height: 420px;
+    height: 398px;
 }
 
 .product-item a {
@@ -1756,7 +1716,6 @@ blockquote:after {
 }
 
 
-
 /* *************************************media******************************* */
 @media only screen and (max-width: 1024px) {
     .linkbutton {
@@ -2253,3 +2212,44 @@ blockquote:after {
         padding: 6rem 1rem 2rem
     }
 }
+
+#navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    z-index: 99;
+    padding: 0 9.4rem;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 3px 0;
+}
+
+#navbar a:hover {
+    background-color: rgb(172, 41, 41);
+    color: black;
+    border-radius: 8px;
+}
+
+#navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 9.4rem !important;
+}
+

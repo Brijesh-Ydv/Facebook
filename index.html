@@ -52,7 +52,7 @@
                 </div>
                 <div class="aboutprofile">
                     <h2>Brijesh Yadav <span>(Web Developer)</span></h2>
-                    <span class="itailic">It is a long established fact that a reader will be distracted by  the
+                    <span class="itailic">It is a long established fact that a reader will be distracted by the
                         readable content of a page when looking at its
                         layout.</span>
                     <div class="linkbar">
@@ -84,47 +84,46 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div style="padding: 0px 2rem;">
-                <nav class="navbar navbar-expand-lg navbar-light main-navbar" id="navbar_top">
-                    <div class="container-fluid p-0">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a href="#prolink" class="active">Profile</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#servlink">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#prodlink">Products</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript:void(0)">Offers</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#imglink">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#testilink">Testimonial</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#paylink">Payment</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
         <div class="topend"></div>
     </div>
-
+    <div class="navigation" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#servlink">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#prodlink">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#imglink">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testilink">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#paylink">Payment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prodlink">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prodlink">Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div class="mainbody">
         <div id="prolink"></div>
         <div class="container p-4 pb-0 pt-0">
@@ -163,7 +162,9 @@
                                                 neque
                                                 aut fuga, quod sit tempora, velit molestias modi quasi perspiciatis
                                                 voluptatem. Ipsa blanditiis modi eos expedita.</span>
-                                            <a type="button" onclick="myFunction()" id="myBtn">Read more</a></p>
+
+                                            <a type="button" onclick="myFunction()" id="myBtn">Read more</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1089,7 +1090,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             // slidesPerView: 3,
-             // slidesPerView: 3,
+            // slidesPerView: 3,
             breakpoints: {
                 2560: {
                     // width: 1000,
@@ -1113,7 +1114,7 @@
 
 
             },
-             autoplay: {
+            autoplay: {
                 delay: 3500,
                 disableOnInteraction: false
             },
@@ -1227,7 +1228,7 @@
     <script>
         var swiper = new Swiper(".test", {
             // slidesPerView: 3,
-             breakpoints: {
+            breakpoints: {
                 2560: {
                     // width: 1000,
                     slidesPerView: 3,
@@ -1268,22 +1269,6 @@
             },
         });
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 540) {
-                    document.getElementById('navbar_top').classList.add('fixed-top');
-                    // add padding top to show content behind navbar
-                    navbar_height = document.querySelector('.navbar').offsetHeight;
-                    document.body.style.paddingTop = navbar_height + 'px';
-                } else {
-                    document.getElementById('navbar_top').classList.remove('fixed-top');
-                    // remove padding top from body
-                    document.body.style.paddingTop = '0';
-                }
-            });
-        }); 
-    </script>
 
     <script>
         function myFunction() {
@@ -1302,6 +1287,20 @@
             }
         }
     </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
@@ -1313,7 +1312,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content" id="profile-shr">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalToggleLabel">Profile Share</h5>
+                <h5 class="modal-title" id="exampleModalToggleLabel"></h5>
                 <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="share-dil">
@@ -1525,7 +1524,21 @@
                 </div>
                 <div class="about-prod">
                     <h5>Connection type:</h5>
-                    <h5>Request Connection Reffer to Friend</h5>
+                    <div class="d-flex">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <h5>Request Connection</h5>
+                            </label>
+                        </div>
+                        <div class="form-check ms-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                <h5>Reffer to Friend</h5>
+                            </label>
+                        </div>
+                    </div>
                     <div class="form-data">
                         <div class="form">
                             <div class="form-group">
