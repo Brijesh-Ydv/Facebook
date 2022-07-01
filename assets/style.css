@@ -185,7 +185,7 @@ li {
     /* padding-top: 50px; */
     /* margin-bottom: 3rem; */
     box-shadow: none;
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+    box-shadow: 0 1px 2px #00000033;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 9px;
@@ -345,7 +345,7 @@ li {
 /* ****************************************services************************************** */
 #services {
     padding-bottom: 0%;
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+    box-shadow: 0 1px 2px #00000033;
     background-color: #ffffff;
     border-radius: 10px;
     padding-bottom: 1.7rem;
@@ -571,7 +571,7 @@ li {
 #products {
     padding-bottom: 0%;
     padding: 12px 0px;
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+    box-shadow: 0 1px 2px #00000033;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 9px;
@@ -583,7 +583,7 @@ li {
     position: relative;
     background: rgb(255, 255, 255);
     /* top: 0rem; */
-    padding: 9rem 1rem 2rem;
+    padding: 12rem 1rem 2rem;
     border-radius: 17px 0px;
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
 }
@@ -625,12 +625,13 @@ li {
 
 .single-product {
     margin-top: 40px;
-    height: 380px !important;
+    height: 420px;
 }
 
 .product-item a {
     position: relative;
     border: 1px solid #ddd;
+    border-radius: 6px;
     padding: 6px 9px;
     color: #3e3e3e;
     background-color: #e4e6eb;
@@ -828,7 +829,7 @@ iframe {
     margin-top: 2rem;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+    box-shadow: 0 1px 2px #00000033;
 }
 
 .slide {
@@ -1023,7 +1024,7 @@ iframe {
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+    box-shadow: 0 1px 2px #00000033;
     /* padding: 1rem !important; */
     /* margin-bottom: 5rem; */
     margin: 9px 9px 5rem 9px;
@@ -1080,7 +1081,7 @@ iframe {
 }
 
 .paymentcard {
-    background: url(/assets/img/cardbg.jpg) no-repeat;
+    background: url(../assets/img/cardbg.jpg) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -1129,7 +1130,7 @@ iframe {
 .element {
     margin-bottom: 1rem;
     /* margin: 20px; */
-    background: url('/assets/img/1.png');
+    background: url('../assets/img/1.png');
     background-size: cover;
     padding: 47px;
     background-position: center;
@@ -1179,6 +1180,7 @@ iframe {
     text-decoration: none;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    border-radius: 6px;
 }
 
 .service-containet a:hover {
@@ -1238,7 +1240,7 @@ iframe {
 .border-gallery {
     /* padding: 0% !important; */
     padding: 10px 0px !important;
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+    box-shadow: 0 1px 2px #00000033;
     background-color: #ffffff;
     border-radius: 10px;
     /* margin-bottom: ; */
@@ -1595,7 +1597,7 @@ iframe {
     padding: 10px 12px 2.5rem;
 
 
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+    box-shadow: 0 1px 2px #00000033;
     background-color: #ffffff;
     border-radius: 10px;
 
@@ -1620,6 +1622,10 @@ iframe {
 .link1 {
     display: flex;
     justify-content: space-between;
+}
+
+.link2 {
+    margin-top: 2rem;
 }
 
 .link1 a {
@@ -1777,7 +1783,7 @@ blockquote:after {
     }
 
     .meSwiper {
-        padding: 8px 0.3rem !important;
+        padding: 8px 0.3rem;
     }
 
     #products {
@@ -1791,5 +1797,459 @@ blockquote:after {
     .linkbutton a {
         font-size: 15px;
         padding: 2px 4px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .profilecont {
+        display: block;
+        text-align: center;
+        top: -6rem;
+    }
+
+    .aboutprofile {
+        margin: 2% 0 0 0;
+        width: 100%;
+    }
+
+    .linkbar {
+        text-align: center;
+        width: auto;
+        margin: 0 0 10px 0;
+    }
+
+    .herologo {
+        text-align: center;
+    }
+
+    .linkbutton {
+        text-align: center;
+    }
+
+    .linkbutton a {
+        font-size: 15px;
+        padding: 7px 11px;
+        margin: 1rem 0 0 0;
+    }
+
+    .shadowBox .row {
+        display: block;
+    }
+
+    .shadowBox .col-md-7 {
+        width: 100%;
+    }
+
+    .shadowBox .col-md-5 {
+        width: 100%;
+    }
+
+    .cont {
+        justify-content: flex-start;
+    }
+
+    .cont h6 {
+        margin: 0 0 0 1rem;
+        width: 100%;
+    }
+
+    .shape {
+        width: 138px;
+        height: 138px;
+    }
+
+    .element {
+        padding: 22px;
+    }
+
+    .button_dil a {
+        display: block;
+        margin: 6px 0;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .service-containet p {
+        margin: 0 0 9px 0;
+    }
+
+    .product-thum {
+        top: -26.5rem;
+    }
+
+    .product-item {
+        padding: 6rem 1rem 2rem;
+    }
+
+    .single-product {
+        height: 393px;
+    }
+
+    .img-box {
+        height: auto;
+    }
+
+    .img-box img {
+        height: auto;
+    }
+
+    iframe {
+        height: auto;
+    }
+
+    .slider {
+        height: 27rem;
+    }
+
+    .paymentcard {
+        width: 76%;
+        margin: auto;
+        right: 12%;
+        top: 12%;
+    }
+
+    .paymentSec {
+        margin-top: 19rem;
+    }
+
+    .accountdetails label {
+        width: 50%;
+    }
+
+    .heroback img {
+        height: 17rem;
+    }
+
+    .userthum {
+        padding: 2rem 1rem 0rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+
+    .footer-cont {
+        padding: 1rem 0%;
+    }
+
+    .footer-cont a {
+        padding: 2px 4px;
+        font-size: 14px;
+    }
+
+    .heroback img {
+        height: 9rem;
+    }
+
+    .profilecont {
+        display: block;
+        text-align: center;
+    }
+
+    .aboutprofile {
+        width: 100%;
+        text-align: center;
+        margin: 0%;
+    }
+
+    .aboutprofile span {
+        font-size: 12px;
+    }
+
+    .linkbar {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .herologo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .linkbutton {
+        text-align: center;
+        width: 100%;
+    }
+
+    .linkbutton a {
+        font-size: 14px;
+        padding: 5px 3px;
+        margin: 1% 0;
+        width: inherit;
+    }
+
+    .profilecont {
+        top: -5rem;
+    }
+
+    .profileimg img {
+        width: 50%;
+    }
+
+    .cont h6 {
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .product-item {
+        padding: 9rem 1rem 2rem;
+    }
+
+    #products {
+        padding: 10px 0px 0px 0;
+    }
+
+    .product-thum {
+        top: -29rem;
+    }
+
+    .single-product {
+        margin-top: 90px;
+    }
+
+    .link1 {
+        display: block;
+    }
+
+    .link1 a {
+        margin-left: 13px;
+    }
+
+    .link1 div {
+        margin: 15px 0;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .slider {
+        height: 29rem;
+    }
+
+    .paymentcard {
+        display: none;
+    }
+
+    .paymentSec {
+        margin-top: 0%;
+    }
+
+    .accountdetails .d-flex {
+        display: block !important;
+        margin: 0%;
+    }
+
+    .accountdetails .account-text {
+        padding: 0%;
+    }
+
+    .link2 {
+        margin-top: 0%;
+    }
+
+    .imp_links .header-section .title {
+        margin-bottom: 22px;
+    }
+
+    .imp_links {
+        padding: 10px 12px 1.5rem;
+    }
+
+    .aboutprofile h2 {
+        font-size: 1.7rem;
+    }
+
+    .userthum {
+        padding: 2rem 1rem 0rem;
+    }
+
+    .img-box {
+        height: auto;
+    }
+
+    .img-box img {
+        height: auto;
+    }
+
+    iframe {
+        height: auto;
+    }
+
+    .button_dil a {
+        display: block;
+        margin: 6px 0;
+        border-radius: 8px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 374px) and (min-width: 290px) {
+    .footer-cont {
+        padding: 1rem 0rem;
+    }
+
+    .profilecont {
+        display: block;
+    }
+
+    .footer-cont a {
+        padding: 2px 3px;
+        font-size: 12px;
+    }
+
+    .heroback img {
+        height: 9rem;
+    }
+
+    .profileimg img {
+        width: 70%;
+    }
+
+    .profileimg {
+        text-align: center;
+    }
+
+    .aboutprofile {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .profilecont {
+        top: -5rem;
+    }
+
+    .linkbar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .herologo {
+        text-align: center;
+    }
+
+    .linkbutton a {
+        font-size: 14px;
+        padding: 5px 3px;
+        margin: 1% 0;
+        width: inherit;
+    }
+
+    .linkbutton {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cont {
+        /* display: block; */
+        padding: 0rem;
+    }
+
+    .cont h6 {
+        width: 100%;
+        font-size: 12px;
+        margin-left: 13px;
+    }
+
+    .userthum {
+        padding: 2rem 1rem 0;
+    }
+
+
+
+    .paymentcard {
+        display: none;
+    }
+
+    .paymentSec {
+        margin-top: 0%;
+    }
+
+    .accountdetails .d-flex {
+        display: block !important;
+        margin: 0%;
+    }
+
+    .accountdetails .account-text {
+        padding: 0%;
+    }
+
+    .link2 {
+        margin-top: 0%;
+    }
+
+    .imp_links .header-section .title {
+        margin-bottom: 22px;
+    }
+
+    .imp_links {
+        padding: 10px 12px 1.5rem;
+    }
+
+    .link1 {
+        display: block;
+    }
+
+    .link1 a {
+        margin-left: 13px;
+    }
+
+    .link1 div {
+        margin: 15px 0;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .slider {
+        height: 32rem;
+    }
+
+    #products {
+        padding: 10px 0px 0 0;
+    }
+
+    .img-box {
+        height: auto;
+    }
+
+    .img-box img {
+        height: auto;
+    }
+
+    iframe {
+        height: auto;
+    }
+
+    .shape {
+        width: 144px;
+        height: 144px;
+    }
+
+    .element {
+        padding: 26px;
+    }
+
+    .button_dil a {
+        display: block;
+        margin: 6px 0;
+        border-radius: 8px;
+        text-align: center;
+
+    }
+
+    .single-product {
+        margin-top: 70px;
+    }
+
+    .product-thum {
+        top: -28rem;
+    }
+
+    .product-item {
+        padding: 6rem 1rem 2rem
     }
 }
