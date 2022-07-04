@@ -83,46 +83,60 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="topend"></div>
-    </div>
-    <div class="navigation" id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#servlink">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#prodlink">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Offers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#imglink">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testilink">Testimonial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#paylink">Payment</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#prodlink">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#prodlink">Products</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <div class="topend"></div>
+
+            <div class="navigation" id="navbar">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <!-- <div class="container-fluid"> -->
+                    <button style="box-shadow:none" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button style="border:none" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="d-flex align-items-center">
+                            <p class="m-0"> Brijesh Yadav</p>
+                            <img style="width: 40px; height:40px" src="assets/img/profile.jpg" alt="">
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#prolink">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servlink">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#prodlink">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#imglink">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testilink">Testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#paylink">Payment</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#prodlink">Products</a>
+                            </li> -->
+                            <li class="topUserImg">
+                                <p>Brijesh Yadav</p>
+                                <img src="assets/img/profile.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </nav>
             </div>
-        </nav>
+        </div>
     </div>
     <div class="mainbody">
         <div id="prolink"></div>
@@ -1295,12 +1309,23 @@
 
         function myFunction() {
             if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+                navbar.classList.add("sticky");
             } else {
                 navbar.classList.remove("sticky");
             }
         }
     </script>
+    <!-- <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > sticky) {
+                    $('#navbar').addClass('box-hover');
+                } else {
+                    $('#navbar').removeClass('box-hover');
+                }
+            });
+        });
+    </script> -->
 </body>
 
 </html>
