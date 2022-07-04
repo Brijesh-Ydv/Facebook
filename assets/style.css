@@ -1850,6 +1850,10 @@ blockquote:after {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .form-btn {
+        display: inline-block;
+    }
+
     .sticky {
         padding: 0 4.3rem !important;
     }
@@ -2148,15 +2152,63 @@ blockquote:after {
         border-radius: 8px;
         text-align: center;
     }
+
+    .share-dil {
+        display: block;
+    }
+
+    .shrthum img {
+        bottom: 19.4rem;
+        right: 9.6rem;
+    }
+
+    .share-dil-img {
+        margin: 1rem 0 0 0;
+    }
+
+    .profile-shr .modal-content {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 374px) and (min-width: 290px) {
-.sticky {
+    .shrthum img {
+        width: 33%;
+    }
+
+    .profile-shr .modal-content {
+        text-align: center;
+    }
+
+    .share-dil-img {
+        margin: 1rem 0 0 0;
+    }
+
+    .link-button a {
+        font-size: 12px;
+    }
+
+    .shrthum img {
+        bottom: 19.4rem;
+        right: 6.2rem;
+    }
+
+    .share-dil {
+        display: block;
+    }
+
+    .form-btn button {
+        font-size: 11px;
+        padding: 6px 6px;
+    }
+
+    .sticky {
         padding: 0 2.8rem !important;
     }
-        .navbar-light .navbar-toggler p{
-font-size: 15px;
-        }
+
+    .navbar-light .navbar-toggler p {
+        font-size: 15px;
+    }
 
     .footer-cont {
         padding: 1rem 0rem;
