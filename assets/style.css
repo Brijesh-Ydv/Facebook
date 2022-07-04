@@ -1727,9 +1727,13 @@ blockquote:after {
 
 #navbar a:hover {
     background-color: #f0f0f0;
-    color: #65676b;
+    color: #1b74e4;
     border-radius: 8px;
 }
+
+/* #navbar li:hover{
+    border-bottom: 3px solid #1b74e4;
+} */
 
 .content {
     padding: 16px;
@@ -1743,6 +1747,7 @@ blockquote:after {
     width: 100%;
     padding: 0 9.4rem !important;
     box-shadow: 0 1px 2px #00000033;
+    background: #ffffffec !important;
 }
 
 .topUserImg img {
@@ -1755,7 +1760,7 @@ blockquote:after {
 
 .topUserImg {
     position: relative;
-    left: 18rem;
+    left: 18.4rem;
     display: none;
     align-items: center;
 }
@@ -1782,11 +1787,11 @@ blockquote:after {
 /* *************************************media******************************* */
 @media only screen and (max-width: 2560px) and (min-width: 1439px) {
     .sticky {
-        padding: 0 41.6rem !important;
+        padding: 8px 41.6rem !important;
     }
 
     .topUserImg {
-        left: 28.2rem;
+        left: 29.5rem;
     }
 }
 
@@ -1798,11 +1803,11 @@ blockquote:after {
 
 @media only screen and (max-width: 1024px) {
     .sticky {
-        padding: 0 4.8rem !important;
+        padding: 8px 4.8rem !important;
     }
 
     .topUserImg {
-        left: 6rem;
+        left: 7.2rem;
     }
 
     .linkbutton {
@@ -1847,12 +1852,13 @@ blockquote:after {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+
     .form-btn {
         display: inline-block;
     }
 
     .sticky {
-        padding: 0 4.3rem !important;
+        padding: 8px 4.3rem !important;
     }
 
     .profilecont {
@@ -1977,12 +1983,21 @@ blockquote:after {
     .userthum {
         padding: 2rem 1rem 0rem;
     }
+        .topUserImg{
+            display: none !important;
+        }
+                 #navbar a {
+                     width: 100%;
+                 }
+                                 #navbar{
+                                        padding: 11px 2.1rem;
+                                 }
 
 }
 
 @media screen and (max-width: 767px) and (min-width: 375px) {
     .sticky {
-        padding: 0px 2.8rem !important;
+        padding: 8px 2.8rem !important;
     }
 
     .navbar-light .navbar-toggler p {
@@ -2166,6 +2181,15 @@ blockquote:after {
     .profile-shr .modal-content {
         text-align: center;
     }
+        .topUserImg {
+            display: none !important;
+        }
+                 #navbar a {
+                     width: 100%;
+                 }
+                                  #navbar {
+                                      padding: 11px 2.1rem;
+                                  }
 }
 
 @media screen and (max-width: 374px) and (min-width: 290px) {
@@ -2200,7 +2224,7 @@ blockquote:after {
     }
 
     .sticky {
-        padding: 0 2.8rem !important;
+        padding: 8px 2.8rem !important;
     }
 
     .navbar-light .navbar-toggler p {
@@ -2373,4 +2397,13 @@ blockquote:after {
     .product-item {
         padding: 6rem 1rem 2rem
     }
+        .topUserImg {
+            display: none !important;
+        }
+                #navbar a{
+                    width: 100%;
+                }
+                                 #navbar {
+                                     padding: 11px 2.1rem;
+                                 }
 }
