@@ -1766,7 +1766,7 @@ blockquote:after {
 
 .topUserImg {
     position: relative;
-    left: 9.5rem;
+    left: 18rem;
     display: none;
     align-items: center;
 }
@@ -1793,7 +1793,7 @@ blockquote:after {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) and (min-width: 1439px) {
     .sticky {
         padding: 0 6.6rem !important;
     }
