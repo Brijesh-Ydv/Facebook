@@ -985,7 +985,9 @@ iframe {
 
 .shrthum img {
     position: absolute;
-    width: 25%;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
     border-radius: 50%;
     bottom: 10rem;
     right: 12rem;
@@ -1444,7 +1446,7 @@ blockquote:after {
     width: 100%;
     padding: 0 9.4rem !important;
     box-shadow: 0 1px 2px #00000033;
-    background: #ffffffec !important;
+    /* background: #ffffffec !important; */
 }
 
 .topUserImg img {
@@ -1452,7 +1454,7 @@ blockquote:after {
     width: 40px;
     border-radius: 50%;
     object-fit: cover;
-    margin: -8px 0 0 16px;
+    margin: 0px 0 0 16px;
 }
 
 .topUserImg {
@@ -1871,7 +1873,11 @@ blockquote:after {
 
     .shrthum img {
         bottom: 19.4rem;
-        right: 9.6rem;
+        width: 100px;
+        /* max-width: 100%; */
+        margin: auto 50%;
+        height: 100px;
+        right: -3.4rem;
     }
 
     .share-dil-img {
@@ -1896,9 +1902,7 @@ blockquote:after {
 }
 
 @media screen and (max-width: 374px) and (min-width: 290px) {
-    .shrthum img {
-        width: 33%;
-    }
+
 
     .profile-shr .modal-content {
         text-align: center;
@@ -1914,7 +1918,11 @@ blockquote:after {
 
     .shrthum img {
         bottom: 19.4rem;
-        right: 6.2rem;
+        width: 100px;
+        /* max-width: 100%; */
+        margin: auto 50%;
+        height: 100px;
+        right: -3.4rem;
     }
 
     .share-dil {
@@ -2112,4 +2120,12 @@ blockquote:after {
     #navbar {
         padding: 11px 2.1rem;
     }
+}
+
+.menu-box {
+    display: none;
+}
+
+.menuopen {
+    display: block;
 }
