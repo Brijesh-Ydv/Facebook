@@ -1301,6 +1301,21 @@
         });
     </script>
 
+
+    <script>
+        window.onscroll = function () { ourFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function ourFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
     <script>
         function myFunction() {
             var dots = document.getElementById("dots");
@@ -1318,31 +1333,6 @@
             }
         }
     </script>
-    <script>
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
-    <!-- <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > sticky) {
-                    $('#navbar').addClass('box-hover');
-                } else {
-                    $('#navbar').removeClass('box-hover');
-                }
-            });
-        });
-    </script> -->
 </body>
 
 </html>
